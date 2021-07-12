@@ -7,7 +7,7 @@
   --ct-page-title-font-family: Asap, "Noto Sans SC", sans-serif;
   --ct-text-size: 16px;
   --ct-line-height: 1.5;
-  --ls-main-content-max-width: 1200px;
+  --ls-main-content-max-width: 750px;
   --ls-font-family: "Noto Sans SC", sans-serif;
   --ct-background: var(--ls-primary-background-color);
   --ct-code-font-family: "Fira Code", Monaco, Menlo, Consolas, "COURIER NEW",
@@ -123,10 +123,6 @@ body {
   margin-top: 0;
 }
 
-.cp__sidebar-main-content {
-  width: 100%;
-}
-
 .cp__sidebar-main-content:not([data-is-global-graph-pages=true]) > div {
   padding: 16px 32px;
 }
@@ -210,6 +206,13 @@ body {
   margin-top: 0.5em;
 }
 
+#journals .journal .foldable-title h1.title::before {
+  content: "🗓";
+  vertical-align: text-bottom;
+  margin-right: 0.3em;
+  font-size: 0.75em;
+}
+
 /* Heading & Page title */
 h1.title {
   margin-top: 8px;
@@ -255,7 +258,7 @@ a.title h1.title {
   z-index: 1;
   position: absolute;
   top: 100%;
-  background-color: rgba(0, 0, 0, 0.16);
+  background-color: #efefef;
   display: block;
   content: "";
 }

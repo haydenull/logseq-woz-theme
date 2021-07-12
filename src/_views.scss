@@ -12,9 +12,9 @@
   margin-top: 0;
 }
 
-.cp__sidebar-main-content {
-  width: 100%;
-}
+// .cp__sidebar-main-content {
+//   width: 100%;
+// }
 
 .cp__sidebar-main-content:not([data-is-global-graph-pages=true]) > div {
   padding: 16px 32px;
@@ -97,4 +97,12 @@
 /* Journals */
 #journals .journal-item:first-child {
   margin-top: 0.5em;
+}
+#journals .journal .foldable-title {
+  h1.title::before {
+    content: "🗓";
+    vertical-align: text-bottom;
+    margin-right: 0.3em;
+    font-size: 0.75em;
+  }
 }
