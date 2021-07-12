@@ -258,7 +258,7 @@ a.title h1.title {
   z-index: 1;
   position: absolute;
   top: 100%;
-  background-color: #efefef;
+  background-color: var(--ls-head-border-color);
   display: block;
   content: "";
 }
@@ -269,10 +269,6 @@ a.title h1.title {
   font-size: 12px;
   background: transparent;
   color: var(--ls-search-icon-color, #9fa6b2);
-}
-
-.cp__header #search-field:focus {
-  outline: 2px solid var(--ct-secondary-color);
 }
 
 .cp__header.electron-mac {
@@ -357,8 +353,8 @@ a.title h1.title {
 }
 
 .ls-block :is(h1, h2) {
-  border-bottom: 1px solid var(--ls-quaternary-background-color);
   margin: 0.4em 0 0;
+  border: none;
 }
 
 /* block reference */
@@ -540,21 +536,53 @@ div.items-center::after,
   max-width: -webkit-fill-available;
 }
 
+.cm-s-solarized,
+.cm-s-solarized.cm-s-dark {
+  background-color: var(--ls-secondary-background-color);
+  text-shadow: unset;
+}
+.cm-s-solarized.CodeMirror,
+.cm-s-solarized.cm-s-dark.CodeMirror {
+  -moz-box-shadow: unset;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+}
+.cm-s-solarized .CodeMirror-gutters,
+.cm-s-solarized.cm-s-dark .CodeMirror-gutters {
+  background-color: var(--ls-secondary-background-color);
+}
+.cm-s-solarized .CodeMirror-linenumber,
+.cm-s-solarized.cm-s-dark .CodeMirror-linenumber {
+  text-shadow: unset;
+}
+
+.block-body .extensions__code::before {
+  content: "";
+  display: block;
+  background: url(https://magic-pocket.oss-cn-beijing.aliyuncs.com/picgo/20210102140051.png);
+  height: 30px;
+  width: 100%;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-color: var(--ls-secondary-background-color);
+  margin-bottom: -7px;
+  border-radius: 5px;
+  background-position: 10px 10px;
+}
+
 /* embed */
 .embed,
 .embed-page,
 .embed-block {
-  box-shadow: 4px 4px black;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
   padding: 0.75em 0.5em;
-  border: 2px solid #000;
   border-radius: 8px;
   margin: 0.2em 0 0.5em;
-  transition: all ease-in 0.3s;
+  transition: all ease-in 0.1s;
 }
 
 :is(.embed, .embed-page, .embed-block):is(:hover, :focus-within) {
-  box-shadow: 8px 8px black;
-  transform: translate(-4px, -4px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 /* page embed */
@@ -724,11 +752,11 @@ progress::-webkit-progress-value {
 }
 
 .tippy-tooltip > .tippy-tooltip-content {
-  border: 2px solid #000;
+  border: 1px solid #efefef;
   border-radius: 8px;
   overflow: hidden;
   background: var(--ls-primary-background-color);
-  box-shadow: 8px 8px #000;
+  box-shadow: 0 8px 12px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .tippy-wrapper,
@@ -1006,6 +1034,7 @@ html[data-theme=dark] {
   --ct-kbd-border-color: #6e7681;
   /* Will be used if backdrop-filter not supported */
   --ct-header-bg-color: #272c35ee;
+  --ls-head-border-color: #3a3a3a;
 }
 
 .dark-theme .image-resize {
@@ -1044,4 +1073,5 @@ html[data-theme=light] {
   --ct-kbd-border-color: #d1d5da;
   /* Will be used if backdrop-filter not supported */
   --ct-header-bg-color: rgba(255, 255, 255, 0.9);
+  --ls-head-border-color: #efefef;
 }

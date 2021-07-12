@@ -1,0 +1,30 @@
+.cm-s-solarized,
+.cm-s-solarized.cm-s-dark {
+  background-color: var(--ls-secondary-background-color);
+  text-shadow: unset;
+  &.CodeMirror {
+    -moz-box-shadow: unset;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+  }
+  .CodeMirror-gutters {
+    background-color: var(--ls-secondary-background-color);
+  }
+  .CodeMirror-linenumber {
+    text-shadow: unset;
+  }
+}
+
+.block-body .extensions__code::before {
+  content: '';
+  display: block;
+  background: url(https://magic-pocket.oss-cn-beijing.aliyuncs.com/picgo/20210102140051.png);
+  height: 30px;
+  width: 100%;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-color: var(--ls-secondary-background-color);
+  margin-bottom: -7px;
+  border-radius: 5px;
+  background-position: 10px 10px;
+}

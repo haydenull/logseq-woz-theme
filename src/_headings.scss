@@ -47,7 +47,7 @@ a.title h1.title {
   z-index: 1;
   position: absolute;
   top: 100%;
-  background-color: #efefef;
+  background-color: var(--ls-head-border-color);
   display: block;
   content: "";
 }
@@ -60,9 +60,9 @@ a.title h1.title {
   color: var(--ls-search-icon-color, #9fa6b2);
 }
 
-.cp__header #search-field:focus {
-  outline: 2px solid var(--ct-secondary-color);
-}
+// .cp__header #search-field:focus {
+//   outline: 1px solid var(--ct-secondary-color);
+// }
 
 .cp__header.electron-mac {
   height: var(--ct-header-height);
@@ -146,6 +146,6 @@ a.title h1.title {
 }
 
 .ls-block :is(h1, h2) {
-  border-bottom: 1px solid var(--ls-quaternary-background-color);
   margin: 0.4em 0 0;
+  border: none;
 }

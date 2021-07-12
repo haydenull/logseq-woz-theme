@@ -2,17 +2,18 @@
 .embed,
 .embed-page,
 .embed-block {
-  box-shadow: 4px 4px rgba(0, 0, 0);
+  // box-shadow: 4px 4px rgba(0, 0, 0);
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
   padding: 0.75em 0.5em;
-  border: 2px solid #000;
+  // border: 2px solid #000;
   border-radius: 8px;
   margin: 0.2em 0 0.5em;
-  transition: all ease-in 0.3s;
+  transition: all ease-in 0.1s;
 }
 
 :is(.embed, .embed-page, .embed-block):is(:hover, :focus-within) {
-  box-shadow: 8px 8px rgba(0, 0, 0);
-  transform: translate(-4px, -4px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  // transform: translate(-2px, -2px);
 }
 
 /* page embed */
