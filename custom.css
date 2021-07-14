@@ -687,17 +687,23 @@ samp {
 
 /* Tags */
 a.tag {
-  border: 1px solid currentColor;
   background-color: var(--ct-block-reference-background);
   padding: 0 4px;
   border-radius: 4px;
   font-weight: 600;
-  line-height: 1.2;
   font-size: 0.8em;
 }
 
 a.tag:hover {
   background-color: var(--ct-block-reference-background-hover);
+}
+
+.dark-theme a.tag {
+  background-color: rgba(16, 107, 163, 0.5);
+}
+
+.white-theme a.tag {
+  background-color: #b1ddf7;
 }
 
 /* Block with-bg-color */
@@ -747,6 +753,28 @@ progress::-webkit-progress-value {
   background: var(--ct-success-color);
 }
 
+/* table */
+table {
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+.dark-theme tr:nth-child(odd) {
+  background: #2c333b;
+}
+
+.dark-theme tr:nth-child(even) {
+  background: #3b4550;
+}
+
+.white-theme tr:nth-child(odd) {
+  background: #f7f6f4;
+}
+
+.white-theme tr:nth-child(even) {
+  background: #e2dfd8;
+}
+
 /* Popups */
 .tippy-tooltip {
   padding: 0.5em 0;
@@ -756,8 +784,8 @@ progress::-webkit-progress-value {
 }
 
 .tippy-tooltip > .tippy-tooltip-content {
-  border: 1px solid #efefef;
-  border-radius: 8px;
+  border: 1px solid var(--ls-border-color);
+  border-radius: 0.25em;
   overflow: hidden;
   background: var(--ls-primary-background-color);
   box-shadow: 0 8px 12px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -821,7 +849,7 @@ progress::-webkit-progress-value {
   font-weight: 600;
   color: var(--ct-query-header-color);
   font-style: var(--ct-inline-code-font-style) !important;
-  border: 2px solid #000;
+  border: 1px solid var(--ls-border-color);
   border-radius: 4px;
   text-shadow: 1px 1px 0px black, 1px 1px 1px #888888;
 }
@@ -1007,7 +1035,7 @@ html[data-theme=dark] #app-container::before {
 
 .dark-theme,
 html[data-theme=dark] {
-  --ct-primary-color: rgb(138, 187, 187);
+  --ct-primary-color: #63a4a4;
   --ct-secondary-color: rgb(112, 172, 172);
   --ct-warning-color: #ff7262;
   --ct-success-color: #0dcf82;
@@ -1039,6 +1067,8 @@ html[data-theme=dark] {
   /* Will be used if backdrop-filter not supported */
   --ct-header-bg-color: #272c35ee;
   --ls-head-border-color: #3a3a3a;
+  --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
+  --ls-border-color: #576576;
 }
 
 .dark-theme .image-resize {
@@ -1047,7 +1077,7 @@ html[data-theme=dark] {
 
 .white-theme,
 html[data-theme=light] {
-  --ct-primary-color: #106ba3;
+  --ct-primary-color: #1482c5;
   --ct-secondary-color: #0a4163;
   --ct-warning-color: #ff7262;
   --ct-success-color: #0dcf82;

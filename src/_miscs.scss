@@ -76,17 +76,29 @@ samp {
 
 /* Tags */
 a.tag {
-  border: 1px solid currentColor;
+  // border: 1px solid currentColor;
   background-color: var(--ct-block-reference-background);
   padding: 0 4px;
   border-radius: 4px;
   font-weight: 600;
-  line-height: 1.2;
+  // line-height: 1.2;
   font-size: 0.8em;
+  // box-sizing: border-box;
 }
 
 a.tag:hover {
   background-color: var(--ct-block-reference-background-hover);
+}
+
+.dark-theme {
+  a.tag {
+    background-color: rgba(16, 107, 163, 0.5);
+  }
+}
+.white-theme {
+  a.tag {
+    background-color: #b1ddf7;
+  }
 }
 
 /* Block with-bg-color */
@@ -134,4 +146,22 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
   background: var(--ct-success-color);
+}
+
+/* table */
+table {
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+.dark-theme tr:nth-child(odd) {
+  background: #2c333b;
+}
+.dark-theme tr:nth-child(even) {
+  background: #3b4550;
+}
+.white-theme tr:nth-child(odd) {
+  background: #f7f6f4;
+}
+.white-theme tr:nth-child(even) {
+  background: #e2dfd8;
 }

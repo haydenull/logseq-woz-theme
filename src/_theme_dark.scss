@@ -4,7 +4,8 @@ html[data-theme="dark"] #app-container::before {
 
 .dark-theme,
 html[data-theme="dark"] {
-  --ct-primary-color: rgb(138, 187, 187);
+  // --ct-primary-color: rgb(138, 187, 187);
+  --ct-primary-color: #63a4a4;
   --ct-secondary-color: rgb(112, 172, 172);
   --ct-warning-color: #ff7262;
   --ct-success-color: #0dcf82;
@@ -50,6 +51,9 @@ html[data-theme="dark"] {
   --ct-header-bg-color: #272c35ee;
 
   --ls-head-border-color: #3a3a3a;
+
+  --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
+  --ls-border-color: #576576;
 }
 
 .dark-theme .image-resize {
