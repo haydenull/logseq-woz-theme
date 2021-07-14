@@ -15,6 +15,9 @@
   }
 }
 
+.block-body .extensions__code {
+  margin-top: 0.5em;
+}
 .block-body .extensions__code::before {
   content: '';
   display: block;

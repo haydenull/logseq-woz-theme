@@ -7,15 +7,15 @@
   --ct-page-title-font-family: Asap, "Noto Sans SC", sans-serif;
   --ct-text-size: 16px;
   --ct-line-height: 1.5;
-  --ls-main-content-max-width: 750px;
+  --ls-main-content-max-width: 780px;
   --ls-font-family: "Noto Sans SC", sans-serif;
   --ct-background: var(--ls-primary-background-color);
-  --ct-code-font-family: "Fira Code", Monaco, Menlo, Consolas, "COURIER NEW",
-    monospace;
+  --ct-code-font-family: "Fira Code", Monaco, Menlo, Consolas, "COURIER NEW", monospace;
   --ct-inline-code-font-size: 0.8em;
   --ct-inline-code-font-style: inherit;
   --ct-inline-code-border-radius: 2px;
   --ct-inline-code-padding: 2px 5px;
+  --ct-inline-code-color: #ff502c;
   --ct-page-font-color: var(--ls-primary-text-color);
   --ct-page-title-color: var(--ct-bold-color);
   --ct-page-title-font-size: 36px;
@@ -243,11 +243,6 @@ a.title h1.title {
 .cp__right-sidebar-topbar {
   height: var(--ct-header-height);
   width: 100%;
-}
-
-.is-mac.is-electron .cp__header *,
-.is-mac.is-electron .cp__right-sidebar-topbar * {
-  cursor: default;
 }
 
 .cp__header::after,
@@ -556,6 +551,10 @@ div.items-center::after,
   text-shadow: unset;
 }
 
+.block-body .extensions__code {
+  margin-top: 0.5em;
+}
+
 .block-body .extensions__code::before {
   content: "";
   display: block;
@@ -637,6 +636,11 @@ strong {
 }
 
 /* External links */
+.external-link::before {
+  content: "🔗";
+  margin-right: 0.2em;
+}
+
 .external-link,
 .external-link:hover {
   color: var(--ls-external-link-color);
@@ -675,7 +679,7 @@ samp {
   font-style: var(--ct-inline-code-font-style) !important;
   border-radius: var(--ct-inline-code-border-radius);
   padding: var(--ct-inline-code-padding) !important;
-  background: var(--ls-tertiary-background-color);
+  background: var(--ls-secondary-background-color);
   color: var(--ct-inline-code-color);
   vertical-align: text-bottom;
   margin-right: 2px;
@@ -989,12 +993,12 @@ a.tooltip-priority:first-of-type::before {
 }
 
 .graph-filters {
-  border: 2px solid #000;
-  box-shadow: 4px 4px black;
+  border: 1px solid #efefef;
+  box-shadow: 0 4px 8px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
 }
 .graph-filters li:not(:last-of-type) {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #efefef;
 }
 
 html[data-theme=dark] #app-container::before {

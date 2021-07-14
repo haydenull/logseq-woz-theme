@@ -24,6 +24,11 @@ strong {
 }
 
 /* External links */
+.external-link::before {
+  content: "🔗";
+  margin-right: 0.2em;
+}
+
 .external-link,
 .external-link:hover {
   color: var(--ls-external-link-color);
@@ -63,7 +68,7 @@ samp {
   font-style: var(--ct-inline-code-font-style) !important;
   border-radius: var(--ct-inline-code-border-radius);
   padding: var(--ct-inline-code-padding) !important;
-  background: var(--ls-tertiary-background-color);
+  background: var(--ls-secondary-background-color);
   color: var(--ct-inline-code-color);
   vertical-align: text-bottom;
   margin-right: 2px;
