@@ -54,12 +54,16 @@ a:hover > .bullet-container .bullet {
   background-color: var(--ct-bullet-closed-color);
 }
 
-.block-control svg {
-  color: var(--ct-block-arrow-color);
+.block-control {
+  position: relative;
+  left: 3px;
 }
+// .block-control svg {
+//   color: var(--ct-block-arrow-color);
+// }
 
 .block-control:hover svg {
-  filter: drop-shadow(2px 4px 6px black);
+  filter: drop-shadow(2px 2px 6px #555);
 }
 
 .ls-block .bullet {
