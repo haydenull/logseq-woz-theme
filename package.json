@@ -1,7 +1,7 @@
 {
   "name": "logseq-woz-theme",
   "author": "Hayden",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "a theme base logseq-dev-theme",
   "logseq": {
     "themes": [

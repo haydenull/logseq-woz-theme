@@ -792,6 +792,10 @@ table {
   background: #e2dfd8;
 }
 
+thead th {
+  font-weight: bolder;
+}
+
 /* Popups */
 .tippy-tooltip {
   padding: 0.5em 0;
@@ -1074,7 +1078,7 @@ html[data-theme=dark] {
   --ct-highlight-color: #ffc600;
   --ls-primary-background-color: #272c35;
   --ls-secondary-background-color: #313942;
-  --ls-tertiary-background-color: #23364f;
+  --ls-tertiary-background-color: #4f5c6b;
   --ls-quaternary-background-color: #395982;
   --ls-primary-text-color: rgb(235, 235, 235);
   --ls-secondary-text-color: rgb(200, 200, 200);
