@@ -13,7 +13,7 @@ https://knowledge-garden.vercel.app/
 The easiest way to adopt this theme is to use jsDelivr CDN by adding the following line to your `custom.css`. You can also change the `@master` part to use the latest version.
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/haydenull/logseq-woz-theme@main/custom.css");
+@import url("https://cdn.jsdelivr.net/gh/haydenull/logseq-woz-theme@main/dist/custom.css");
 ```
 
 Alternatively, you can download this repo and load it as a Logseq Theme Plugin.
