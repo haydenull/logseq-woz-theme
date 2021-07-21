@@ -4,19 +4,15 @@ fork 自 [logseq-dev-theme](https://github.com/pengx17/logseq-dev-theme), 修改
 
 <img src="./logo.png" width="100" />
 
-## Working Demo
-
-https://knowledge-garden.vercel.app/
-
 ## Usage
 
-The easiest way to adopt this theme is to use jsDelivr CDN by adding the following line to your `custom.css`. You can also change the `@master` part to use the latest version.
+The easiest way to adopt this theme is to use jsDelivr CDN by adding the following line to your `custom.css`.
 
 ```css
 @import url("https://cdn.jsdelivr.net/gh/haydenull/logseq-woz-theme@main/dist/custom.css");
 ```
 
-Alternatively, you can download this repo and load it as a Logseq Theme Plugin.
+Alternatively, you can [download package](https://github.com/haydenull/logseq-woz-theme/releases) and load it as a Logseq Theme Plugin.
 
 ## Demo
 
