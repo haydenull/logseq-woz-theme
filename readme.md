@@ -22,5 +22,3 @@ Alternatively, you can download this repo and load it as a Logseq Theme Plugin.
 
 ![](./light.png)
 ![](./dark.png)
-
-### [Changelog](./CHANGELOG.md)
