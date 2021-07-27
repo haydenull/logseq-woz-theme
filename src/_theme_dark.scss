@@ -47,8 +47,7 @@ html[data-theme="dark"] {
   --ct-kbd-bg-color: #0d1117;
   --ct-kbd-border-color: #6e7681;
 
-  /* Will be used if backdrop-filter not supported */
-  --ct-header-bg-color: #272c35ee;
+  --ct-header-bg-color: var(--ls-primary-background-color);
 
   --ls-head-border-color: #3a3a3a;
 

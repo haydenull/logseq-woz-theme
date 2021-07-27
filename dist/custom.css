@@ -82,22 +82,12 @@ body {
     padding: 0 1rem;
   }
 }
-@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
-  .cp__header,
+.cp__header,
 .cp__right-sidebar-topbar,
 .sidebar-item.content > div > div:first-of-type {
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    background-color: transparent;
-  }
+  background: var(--ct-header-bg-color);
 }
-@supports not ((-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))) {
-  .cp__header,
-.cp__right-sidebar-topbar,
-.sidebar-item.content > div > div:first-of-type {
-    background: var(--ct-header-bg-color);
-  }
-}
+
 #app-container::before {
   content: "";
   top: 0;
@@ -172,14 +162,9 @@ body {
 
 .sidebar-item.content > div > div:first-of-type {
   position: sticky;
-  top: var(--ct-header-height);
+  top: 0;
   padding: 1rem;
-  margin: -1rem;
   z-index: 10;
-}
-
-.sidebar-item.content > div > div:first-of-type + div {
-  margin-top: 1.5rem;
 }
 
 .cp__right-sidebar-inner .resizer {
@@ -1100,8 +1085,7 @@ html[data-theme=dark] {
   --ls-scrollbar-foreground-color: var(--ls-secondary-background-color);
   --ct-kbd-bg-color: #0d1117;
   --ct-kbd-border-color: #6e7681;
-  /* Will be used if backdrop-filter not supported */
-  --ct-header-bg-color: #272c35ee;
+  --ct-header-bg-color: var(--ls-primary-background-color);
   --ls-head-border-color: #3a3a3a;
   --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
   --ls-border-color: #576576;
@@ -1141,7 +1125,6 @@ html[data-theme=light] {
   --ls-page-properties-background-color: var(--ls-tertiary-background-color);
   --ct-kbd-bg-color: #fafbfc;
   --ct-kbd-border-color: #d1d5da;
-  /* Will be used if backdrop-filter not supported */
-  --ct-header-bg-color: rgba(255, 255, 255, 0.9);
+  --ct-header-bg-color: var(--ls-primary-background-color);
   --ls-head-border-color: #efefef;
 }
