@@ -78,6 +78,32 @@ a:hover > .bullet-container .bullet {
   transform: scale(1);
 }
 
+.block-content-wrapper > div > .block-content {
+  & > span > span > :first-child {
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 4px;
+      height: 10px;
+      top: calc(50% - 5px);
+      left: -8px;
+      transform: scaleY(0.5);
+      transition: all 0.2s;
+      opacity: 0;
+      background: var(--ct-primary-color);
+      border-radius: 2px;
+    }
+  }
+
+  &:hover > span > span > :first-child::before {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
 /************************* 
  * Editing block threading
  *************************/
@@ -105,10 +131,13 @@ div.items-center::after,
   border-bottom-left-radius: 10px;
 }
 
-.blocks-container > .ls-block > div > div.items-center::before,
-.blocks-container > .ls-block:focus-within > div > div.items-center::after,
-.blocks-container > .block-children:focus-within > .ls-block::before {
-  display: none;
+// Don't draw threading for the root level block. Better to have a "has-parent"
+.blocks-container, .blocks-container > #lazy-blocks {
+  > .ls-block > div > div.items-center::before,
+  > .ls-block:focus-within > div > div.items-center::after,
+  > .block-children:focus-within > .ls-block::before {
+    display: none;
+  }
 }
 
 .ls-block:focus-within > div > div.items-center::before {
