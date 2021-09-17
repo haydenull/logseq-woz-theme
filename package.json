@@ -1,7 +1,7 @@
 {
   "name": "logseq-woz-theme",
   "author": "Hayden",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "a theme base logseq-dev-theme",
   "logseq": {
     "themes": [
@@ -15,7 +15,7 @@
     "icon": "./logo.png"
   },
   "scripts": {
-    "build": "yarn sass src/main.scss dist/custom.css --no-source-map && cp package.json logo.png dist"
+    "build": "yarn sass src/main.scss dist/custom.css --no-source-map && cp package.json logo.png dist && cp -ri src/assets/ dist/assets"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
