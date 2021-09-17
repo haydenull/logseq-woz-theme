@@ -7,15 +7,16 @@
     "themes": [
       {
         "name": "Woz Theme",
-        "url": "./custom.css",
-        "description": "a theme base logseq-dev-theme"
+        "url": "./dist/custom.css",
+        "description": "A theme base logseq-dev-theme"
       }
     ],
-    "id": "hayden_woz_theme",
+    "id": "hayden-woz-theme",
     "icon": "./logo.png"
   },
   "scripts": {
-    "build": "yarn sass src/main.scss dist/custom.css --no-source-map && cp package.json logo.png dist && cp -ri src/assets/ dist/assets"
+    "build": "yarn sass src/main.scss dist/custom.css --no-source-map && cp package.json logo.png dist && cp -ri src/assets/ dist/assets",
+    "build:market": "yarn sass src/main.scss dist/custom.css --no-source-map && cp -ri src/assets/ dist/assets"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",

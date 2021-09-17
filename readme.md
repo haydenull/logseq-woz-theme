@@ -18,3 +18,12 @@ Alternatively, you can [download package](https://github.com/haydenull/logseq-wo
 
 ![](./light.png)
 ![](./dark.png)
+
+## Develop
+
+```sh
+$ yarn
+
+$ yarn build # Pack all resources into the dist folder (include packaje.json) for manual install
+$ yarn build:market # build for marketplace
+```
