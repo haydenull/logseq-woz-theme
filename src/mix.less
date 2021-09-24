@@ -1,0 +1,48 @@
+@import './var/color.less';
+
+// priority
+#level_A, #level_B, #level_C {
+  a.priority {
+    visibility: hidden;
+    font-size: 0;
+    &::before {
+      display: inline-block;
+      height: 20px;
+      padding-left: 22px;
+      visibility: visible;
+      content: "A";
+      font-size: 16px;
+      background-image: url('./assets/high_priority.png');
+      background-size: 18px;
+      background-repeat: no-repeat;
+      background-position: 2px 2px;
+    }
+  }
+}
+#level_B a.priority::before {
+  content: "B";
+  background-image: url('./assets/medium_priority.png');
+}
+#level_C a.priority::before {
+  content: "C";
+  background-image: url('./assets/low_priority.png');
+}
+
+// links
+.external-link::before {
+  content: "🔗";
+  margin-right: 4px;
+}
+
+// highlight
+mark {
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+  text-decoration-style: solid;
+  text-decoration: underline;
+  text-decoration-color: @yellow-500;
+  text-decoration-thickness: 8px;
+  text-underline-offset: -2px;
+  text-decoration-skip-ink: none;
+}

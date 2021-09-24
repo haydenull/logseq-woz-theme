@@ -1,0 +1,29 @@
+@import './color.less';
+
+.dark-theme, html[data-theme="dark"] {
+  --ls-primary-background-color: lighten(@gray-800, 2%);
+  --ls-secondary-background-color: @gray-700;
+  --ls-tertiary-background-color: @gray-600;
+  --ls-quaternary-background-color: @gray-500;
+
+  --ls-primary-text-color: @gray-300;
+  --ls-secondary-text-color: @gray-400;
+  --ls-title-text-color: @gray-400;
+  // --ls-link-text-color: darken(@blue-50, 50%);
+
+  // scroll bar thumb
+  --ls-scrollbar-foreground-color: var(--ls-tertiary-background-color);
+
+  // table
+  --ls-table-tr-even-background-color: darken(@gray-700, 3%);
+
+  // border
+  --ls-border-color: var(--ls-tertiary-background-color);
+
+  // guideline
+  --ls-guideline-color: @gray-700;
+  --ls-block-bullet-color: @gray-600;
+  --ls-block-bullet-border-color: @gray-500;
+
+  --ls-block-highlight-color: darken(@gray-700, 3%);
+}
