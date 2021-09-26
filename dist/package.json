@@ -1,0 +1,27 @@
+{
+  "name": "logseq-woz-theme",
+  "author": "Haydenull",
+  "version": "0.0.8",
+  "description": "A lightly theme.",
+  "logseq": {
+    "themes": [
+      {
+        "name": "Woz Theme",
+        "url": "./custom.css",
+        "description": "logseq theme"
+      }
+    ],
+    "id": "hayden-woz-theme-new",
+    "icon": "./logo.png"
+  },
+  "scripts": {
+    "build": "rm -rf dist/ && lessc src/main.less dist/custom.css && cp -ri src/assets/ dist/assets && cp package.json logo.png dist"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/npm": "^7.1.3",
+    "less": "^4.1.1",
+    "sass": "^1.35.1"
+  }
+}
