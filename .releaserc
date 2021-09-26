@@ -16,9 +16,15 @@
       }
     ],
     [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "zip -qq -r logseq-woz-theme-${nextRelease.version}.zip package.json logo.png dist/"
+      }
+    ],
+    [
       "@semantic-release/github",
       {
-        "assets": ["dist/**"]
+        "assets": ["logseq-woz-theme-*.zip"]
       }
     ]
   ]
