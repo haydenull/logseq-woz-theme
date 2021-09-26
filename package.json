@@ -7,7 +7,7 @@
     "themes": [
       {
         "name": "Woz Theme",
-        "url": "./dist/custom.css",
+        "url": "./custom.css",
         "description": "logseq theme"
       }
     ],
@@ -15,7 +15,7 @@
     "icon": "./logo.png"
   },
   "scripts": {
-    "build": "lessc src/main.less dist/custom.css && rm -rf dist/assets/ && cp -ri src/assets/ dist/assets"
+    "build": "rm -rf dist/ && lessc src/main.less dist/custom.css && cp -ri src/assets/ dist/assets && cp package.json logo.png dist"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
