@@ -25,15 +25,11 @@ html[data-theme="dark"] {
   margin-right: 8px;
   font-size: 0.8em;
 }
-#level_A a.priority,
-#level_B a.priority,
-#level_C a.priority {
+a.priority {
   visibility: hidden;
   font-size: 0;
 }
-#level_A a.priority::before,
-#level_B a.priority::before,
-#level_C a.priority::before {
+a.priority::before {
   display: inline-block;
   height: 20px;
   padding-left: 22px;
@@ -45,11 +41,11 @@ html[data-theme="dark"] {
   background-repeat: no-repeat;
   background-position: 2px 2px;
 }
-#level_B a.priority::before {
+a.priority[href="#/page/B"]::before {
   content: "B";
   background-image: url('./assets/medium_priority.png');
 }
-#level_C a.priority::before {
+a.priority[href="#/page/C"]::before {
   content: "C";
   background-image: url('./assets/low_priority.png');
 }

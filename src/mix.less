@@ -1,29 +1,28 @@
 @import './var/color.less';
 
 // priority
-#level_A, #level_B, #level_C {
-  a.priority {
-    visibility: hidden;
-    font-size: 0;
-    &::before {
-      display: inline-block;
-      height: 20px;
-      padding-left: 22px;
-      visibility: visible;
-      content: "A";
-      font-size: 16px;
-      background-image: url('./assets/high_priority.png');
-      background-size: 18px;
-      background-repeat: no-repeat;
-      background-position: 2px 2px;
-    }
+a.priority {
+  visibility: hidden;
+  font-size: 0;
+  &::before {
+    display: inline-block;
+    height: 20px;
+    padding-left: 22px;
+    visibility: visible;
+    content: "A";
+    font-size: 16px;
+    background-image: url('./assets/high_priority.png');
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
   }
 }
-#level_B a.priority::before {
+
+a.priority[href="#/page/B"]::before {
   content: "B";
   background-image: url('./assets/medium_priority.png');
 }
-#level_C a.priority::before {
+a.priority[href="#/page/C"]::before {
   content: "C";
   background-image: url('./assets/low_priority.png');
 }
