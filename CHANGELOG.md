@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/haydenull/logseq-woz-theme/compare/v1.2.2...v1.2.3) (2021-12-30)
+
+
+### Bug Fixes
+
+* fix code block style error in version 0.56 ([8202746](https://github.com/haydenull/logseq-woz-theme/commit/8202746c197234d02a60f810513cf6d242f970cf))
+
 ## [1.2.2](https://github.com/haydenull/logseq-woz-theme/compare/v1.2.1...v1.2.2) (2021-12-12)
 
 
