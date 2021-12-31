@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/haydenull/logseq-woz-theme/compare/v1.2.3...v1.3.0) (2021-12-31)
+
+
+### Features
+
+* change guide line hover color ([a366d10](https://github.com/haydenull/logseq-woz-theme/commit/a366d10c911d5718119ee1fb7e622197d0ad4e99))
+
 ## [1.2.3](https://github.com/haydenull/logseq-woz-theme/compare/v1.2.2...v1.2.3) (2021-12-30)
 
 
