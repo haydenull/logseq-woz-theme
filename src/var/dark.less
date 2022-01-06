@@ -1,10 +1,10 @@
 @import './color.less';
 
 .dark-theme, html[data-theme="dark"] {
-  --ls-primary-background-color: lighten(@gray-800, 2%);
-  --ls-secondary-background-color: @gray-700;
-  --ls-tertiary-background-color: @gray-600;
-  --ls-quaternary-background-color: @gray-500;
+  --ls-primary-background-color: #363B40;
+  --ls-secondary-background-color: #2e3033;
+  --ls-tertiary-background-color: var(--ls-primary-background-color);
+  --ls-quaternary-background-color: fade(@yellow-300, 30%);
 
   --ls-primary-text-color: @gray-300;
   --ls-secondary-text-color: @gray-400;
@@ -15,16 +15,29 @@
   --ls-scrollbar-foreground-color: var(--ls-tertiary-background-color);
 
   // table
-  --ls-table-tr-even-background-color: darken(@gray-700, 3%);
+  --ls-table-tr-even-background-color: #333;
 
   // border
   --ls-border-color: var(--ls-tertiary-background-color);
 
   // guideline
-  --ls-guideline-color: @gray-700;
-  --ls-block-bullet-color: @gray-600;
-  --ls-block-bullet-border-color: @gray-500;
-  --ls-guideline-hover-color: @gray-500;
+  --ls-guideline-color: @gray-500;
+  --ls-block-bullet-color: @gray-500;
+  --ls-block-bullet-border-color: @gray-400;
+  --ls-guideline-hover-color: @gray-400;
 
   --ls-block-highlight-color: darken(@gray-700, 3%);
+
+  // inline code
+  --ls-page-inline-code-bg-color: @gray-600;
+
+  --ls-link-text-color: @yellow-200;
+  --ls-active-secondary-color: @yellow-300;
+
+  // todo
+  --ls-page-checkbox-color: @yellow-500;
+
+  // reference
+  --ls-page-blockquote-border-color: @yellow-300;
+  --ls-page-blockquote-bg-color: fade(@yellow-300, 10%);
 }

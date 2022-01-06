@@ -1,5 +1,22 @@
 thead th {
   font-weight: bolder;
+  font-size: 16px;
+  // background-color: var(--ls-table-tr-even-background-color);
+  background-color: #f4f4f4;
+  border: none;
+}
+table th, table td {
+  height: 35px;
+  border: 1px solid #dedede;
+  padding: 0 10px;
+}
+.dark-theme {
+  & thead th {
+    background-color: #383838;
+  }
+  & table th, & table td {
+    border-color: #282b2f;
+  }
 }
 /* table */
 // table {
