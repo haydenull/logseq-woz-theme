@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/haydenull/logseq-woz-theme/compare/v1.5.0...v1.6.0) (2022-01-07)
+
+
+### Features
+
+* ✨ style optimize ([9ce5e3f](https://github.com/haydenull/logseq-woz-theme/commit/9ce5e3fb56a6356107362c04e451b280bbcb1edb))
+
 # [1.5.0](https://github.com/haydenull/logseq-woz-theme/compare/v1.4.0...v1.5.0) (2022-01-07)
 
 
