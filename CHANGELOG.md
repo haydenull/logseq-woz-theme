@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/haydenull/logseq-woz-theme/compare/v1.4.0...v1.5.0) (2022-01-07)
+
+
+### Features
+
+* ✨ block selected color ([037e48d](https://github.com/haydenull/logseq-woz-theme/commit/037e48d1694fc72f75ee2886d085076a42847a50))
+
 # [1.4.0](https://github.com/haydenull/logseq-woz-theme/compare/v1.3.0...v1.4.0) (2022-01-06)
 
 
