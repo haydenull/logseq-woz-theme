@@ -1,5 +1,19 @@
 @import './var/color.less';
 
+// head
+.dark-theme {
+  #head {
+    a {
+      color: var(--ls-primary-text-color);
+    }
+  }
+}
+
+// block
+.ls-block {
+  border-bottom-width: 4px;
+}
+
 // priority
 a.priority {
   visibility: hidden;
@@ -40,9 +54,9 @@ mark {
   font-size: inherit;
   text-decoration-style: solid;
   text-decoration: underline;
-  text-decoration-color: @yellow-500;
-  text-decoration-thickness: 8px;
-  text-underline-offset: -2px;
+  text-decoration-color: fade(@yellow-500, 80%);
+  text-decoration-thickness: 10px;
+  text-underline-offset: -8px;
   text-decoration-skip-ink: none;
 }
 
@@ -50,5 +64,23 @@ mark {
 .block-children-left-border {
   &:hover {
     background-color: var(--ls-guideline-hover-color);
+  }
+}
+
+// button
+.dark-theme {
+  .bg-indigo-600 {
+    background-color: fade(@yellow-600, 80%);
+  }
+  .hover\:bg-indigo-700:hover {
+    background-color: @yellow-700;
+  }
+}
+.white-theme {
+  .bg-indigo-600 {
+    background-color: fade(@green-600, 80%);
+  }
+  .hover\:bg-indigo-700:hover {
+    background-color: @green-700;
   }
 }

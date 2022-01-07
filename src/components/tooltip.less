@@ -1,0 +1,20 @@
+@bg-color: #2c3034;
+
+.dark {
+  .tippy-popper {
+    // top arrow
+    &[x-placement^="top"] [x-arrow] {
+      border-top-color: @bg-color;
+    }
+    // bottom arrow
+    &[x-placement^="bottom"] [x-arrow] {
+      border-bottom-color: @bg-color;
+    }
+  }
+  .tippy-tooltip {
+    background-color: @bg-color;
+  }
+  .tippy-wrapper {
+    background-color: @bg-color;
+  }
+}

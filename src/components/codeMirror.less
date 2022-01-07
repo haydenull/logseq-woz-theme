@@ -18,10 +18,15 @@
     background-repeat: no-repeat;
     background-color: var(--ls-secondary-background-color);
     margin-bottom: -7px;
-    border-radius: 5px;
+    border-radius: 6px;
     background-position: 10px 10px;
     position: absolute;
     z-index: 2;
+  }
+  & > .CodeMirror {
+    border-radius: 6px;
+    font-family: Monaco,Consolas,'Fira Code',Menlo,'COURIER NEW',monospace;
+    background-color: var(--ls-secondary-background-color);
   }
   // code content
   .CodeMirror-lines {
