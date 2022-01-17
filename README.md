@@ -8,12 +8,17 @@ A lightly theme refer to [logseq-dev-theme](https://github.com/pengx17/logseq-de
 
 This theme has been uploaded to the marketplace.
 
-## Demo
+## Preview
 
-![](./light.png)
-![](./dark.png)
+### Light
+![](./screenshot/light1.png)
+![](./screenshot/light2.png)
 
-## Develop
+### Dark
+![](./screenshot/dark1.png)
+![](./screenshot/dark2.png)
+
+## Development
 
 ```sh
 $ yarn
