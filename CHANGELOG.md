@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/haydenull/logseq-woz-theme/compare/v1.6.0...v1.7.0) (2022-01-18)
+
+
+### Features
+
+* ✨ optimize dark graph background ([e550026](https://github.com/haydenull/logseq-woz-theme/commit/e550026c96d6b431e0bd644f758db3f435abed0d))
+
 # [1.6.0](https://github.com/haydenull/logseq-woz-theme/compare/v1.5.0...v1.6.0) (2022-01-07)
 
 
