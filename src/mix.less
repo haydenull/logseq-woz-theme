@@ -68,24 +68,33 @@ mark {
 }
 
 // button
-.dark-theme {
-  .bg-indigo-600 {
-    background-color: fade(@yellow-600, 80%);
-  }
-  .hover\:bg-indigo-700:hover {
-    background-color: @yellow-700;
-  }
+.bg-indigo-600 {
+  background-color: var(--woz-button-bg-color);
 }
-.white-theme {
-  .bg-indigo-600 {
-    background-color: fade(@green-600, 80%);
-  }
-  .hover\:bg-indigo-700:hover {
-    background-color: @green-700;
-  }
+.hover\:bg-indigo-700:hover {
+  background-color: var(--woz-button-bg-hover-color);
 }
+
 
 // graph
 .dark-theme #global-graph {
   background-color: #83725e;
+}
+
+// command-palette
+.dark-theme .ui__ac-group-name {
+  color: var(--ls-secondary-text-color);
+}
+
+// date-picker
+#date-time-picker .datepicker td.active, #date-time-picker .dark-theme .datepicker td.active:hover {
+  background-color: var(--woz-button-bg-color);
+  border: none;
+}
+#date-time-picker .datepicker th.selectable {
+  color: var(--ls-link-text-color);
+}
+#date-time-picker .datepicker td.available:hover, #date-time-picker .datepicker th.available:hover {
+  background-color: var(--woz-button-bg-color);
+  color: #fff;
 }

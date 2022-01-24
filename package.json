@@ -15,7 +15,8 @@
     "icon": "./logo.png"
   },
   "scripts": {
-    "build": "rm -rf dist/ && lessc src/main.less dist/custom.css && cp -ri src/assets/ dist/assets"
+    "build": "rm -rf dist/ && lessc src/main.less dist/custom.css && cp -ri src/assets/ dist/assets",
+    "build:windows": "rmdir /s dist && lessc src/main.less dist/custom.css && Xcopy src\\assets dist\\assets"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
