@@ -11,11 +11,14 @@ table th, table td {
   padding: 0 10px;
 }
 .dark-theme {
-  & thead th {
+  td, tr {
+    border-bottom: 1px solid #5c5b5c;
+  }
+  thead th {
     background-color: #383838;
   }
-  & table th, & table td {
-    border-color: #282b2f;
+  table th, & table td {
+    border-color: #5c5b5c;
   }
 }
 /* table */
