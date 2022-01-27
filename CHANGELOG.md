@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/haydenull/logseq-woz-theme/compare/v1.8.0...v1.9.0) (2022-01-27)
+
+
+### Features
+
+* ✨ table & bullet-threading ([48751fa](https://github.com/haydenull/logseq-woz-theme/commit/48751fa8c9bd27483658e1fcd1f8c894781c452c))
+
 # [1.8.0](https://github.com/haydenull/logseq-woz-theme/compare/v1.7.0...v1.8.0) (2022-01-24)
 
 
