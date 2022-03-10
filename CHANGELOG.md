@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/haydenull/logseq-woz-theme/compare/v1.9.0...v1.9.1) (2022-03-10)
+
+
+### Bug Fixes
+
+* Reserve a place for tabs ([49ffa1b](https://github.com/haydenull/logseq-woz-theme/commit/49ffa1b40df6779faaad6bbe5fc15241cbc9d7fa))
+
 # [1.9.0](https://github.com/haydenull/logseq-woz-theme/compare/v1.8.0...v1.9.0) (2022-01-27)
 
 
