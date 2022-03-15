@@ -1,3 +1,10 @@
+## [1.9.2](https://github.com/haydenull/logseq-woz-theme/compare/v1.9.1...v1.9.2) (2022-03-15)
+
+
+### Bug Fixes
+
+* 🎨 format ([5ed6836](https://github.com/haydenull/logseq-woz-theme/commit/5ed68365309a628e523c9528ba1a550ee16d362e))
+
 ## [1.9.1](https://github.com/haydenull/logseq-woz-theme/compare/v1.9.0...v1.9.1) (2022-03-10)
 
 
