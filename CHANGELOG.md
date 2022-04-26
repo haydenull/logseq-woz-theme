@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/haydenull/logseq-woz-theme/compare/v1.9.2...v1.10.0) (2022-04-26)
+
+
+### Features
+
+* ✨ optimize todo and tag style ([521c535](https://github.com/haydenull/logseq-woz-theme/commit/521c5350bee9ce4873b7344938cf9f704ad11748))
+
 ## [1.9.2](https://github.com/haydenull/logseq-woz-theme/compare/v1.9.1...v1.9.2) (2022-03-15)
 
 
