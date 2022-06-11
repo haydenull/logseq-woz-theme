@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/haydenull/logseq-woz-theme/compare/v1.10.0...v1.10.1) (2022-06-11)
+
+
+### Bug Fixes
+
+* 🐛 highlight conflict ([550aec6](https://github.com/haydenull/logseq-woz-theme/commit/550aec6e250dc0797b07714854c793e54739915e))
+
 # [1.10.0](https://github.com/haydenull/logseq-woz-theme/compare/v1.9.2...v1.10.0) (2022-04-26)
 
 
