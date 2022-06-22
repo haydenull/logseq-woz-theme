@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/haydenull/logseq-woz-theme/compare/v1.10.1...v1.10.2) (2022-06-22)
+
+
+### Bug Fixes
+
+* 🐛 adapt logseq 0.7.4 ([f95545f](https://github.com/haydenull/logseq-woz-theme/commit/f95545f9166d08a8a9eadc8d93e1e519b0c8789b))
+
 ## [1.10.1](https://github.com/haydenull/logseq-woz-theme/compare/v1.10.0...v1.10.1) (2022-06-11)
 
 
