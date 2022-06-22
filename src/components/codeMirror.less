@@ -21,12 +21,13 @@
     border-radius: 6px;
     background-position: 10px 10px;
     position: absolute;
-    z-index: 2;
+    z-index: 4;
   }
-  & > .CodeMirror {
+  & .CodeMirror {
     border-radius: 6px;
     font-family: Monaco,Consolas,'Fira Code',Menlo,'COURIER NEW',monospace;
     background-color: var(--ls-secondary-background-color);
+    text-shadow: none;
   }
   // code content
   .CodeMirror-lines {
@@ -34,6 +35,9 @@
   }
   .CodeMirror-hscrollbar {
     background-color: var(--ls-secondary-background-color);
+  }
+  .CodeMirror-scroll {
+    padding-top: 30px;
   }
 }
 
