@@ -1,3 +1,10 @@
+## [1.10.3](https://github.com/haydenull/logseq-woz-theme/compare/v1.10.2...v1.10.3) (2022-06-28)
+
+
+### Bug Fixes
+
+* block properties font size too big in light theme ([4fce802](https://github.com/haydenull/logseq-woz-theme/commit/4fce802205ce88b92538836d3330db6e9dd9af9f))
+
 ## [1.10.2](https://github.com/haydenull/logseq-woz-theme/compare/v1.10.1...v1.10.2) (2022-06-22)
 
 
