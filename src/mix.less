@@ -149,7 +149,7 @@ mark {
 }
 
 // tag
-.tag {
+.tag:not(.katex .tag) {
   background-color: var(--ls-tag-text-color);
   color: #fff !important;
   padding: 0 0.5em 0 1em;
@@ -183,7 +183,7 @@ mark {
     border-radius: 0.25em;
   }
 }
-.dark-theme .tag {
+.dark-theme .tag:not(.katex .tag) {
   color: #6b5600 !important;
 }
 
