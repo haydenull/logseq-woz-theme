@@ -1,3 +1,10 @@
+## [1.10.4](https://github.com/haydenull/logseq-woz-theme/compare/v1.10.3...v1.10.4) (2022-11-06)
+
+
+### Bug Fixes
+
+* 🐛 toolbar button hover ([51c09c2](https://github.com/haydenull/logseq-woz-theme/commit/51c09c2441f56920daba2ef68a8898fd0e0562d4))
+
 ## [1.10.3](https://github.com/haydenull/logseq-woz-theme/compare/v1.10.2...v1.10.3) (2022-06-28)
 
 
