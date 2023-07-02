@@ -1,33 +1,33 @@
 .block-body .extensions__code {
   margin-top: 6px;
-  position: relative;
   // code language
   .extensions__code-lang {
     right: 5px;
     background-color: var(--ls-secondary-background-color);
     color: var(--ls-secondary-text-color);
   }
-  // code block header
-  &::before {
-    content: '';
-    display: block;
-    background: url('./assets/codeWindowButton.png');
-    height: 30px;
-    width: 100%;
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-color: var(--ls-secondary-background-color);
-    margin-bottom: -7px;
-    border-radius: 6px;
-    background-position: 10px 10px;
-    position: absolute;
-    z-index: 4;
-  }
   & .CodeMirror {
     border-radius: 6px;
     font-family: Monaco,Consolas,'Fira Code',Menlo,'COURIER NEW',monospace;
     background-color: var(--ls-secondary-background-color);
     text-shadow: none;
+    position: relative;
+    // code block header
+    &::before {
+      content: '';
+      display: block;
+      background: url('./assets/codeWindowButton.png');
+      height: 30px;
+      width: 100%;
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-color: var(--ls-secondary-background-color);
+      margin-bottom: -7px;
+      border-radius: 6px;
+      background-position: 10px 10px;
+      position: absolute;
+      z-index: 4;
+    }
   }
   // code content
   .CodeMirror-lines {
