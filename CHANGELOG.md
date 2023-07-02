@@ -1,3 +1,10 @@
+## [1.10.5](https://github.com/haydenull/logseq-woz-theme/compare/v1.10.4...v1.10.5) (2023-07-02)
+
+
+### Bug Fixes
+
+* calculator style ([02107fd](https://github.com/haydenull/logseq-woz-theme/commit/02107fd0c2ae0bc2449268b9c91b8805b1691290))
+
 ## [1.10.4](https://github.com/haydenull/logseq-woz-theme/compare/v1.10.3...v1.10.4) (2022-11-06)
 
 
