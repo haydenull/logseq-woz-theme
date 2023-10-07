@@ -1,3 +1,10 @@
+## [1.10.6](https://github.com/haydenull/logseq-woz-theme/compare/v1.10.5...v1.10.6) (2023-10-07)
+
+
+### Bug Fixes
+
+* :bug: hide the box shadow of input in search modal ([ecca4dd](https://github.com/haydenull/logseq-woz-theme/commit/ecca4dd0edcc888afe7fc844022fde8e19884a8a))
+
 ## [1.10.5](https://github.com/haydenull/logseq-woz-theme/compare/v1.10.4...v1.10.5) (2023-07-02)
 
 
